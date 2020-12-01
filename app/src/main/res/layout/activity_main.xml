@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:background="#A272E6">
+
+    <Button
+            android:id="@+id/red"
+            android:layout_width="130dp"
+            android:layout_height="80dp"
+            android:backgroundTint="#FF0606"
+            android:text="@string/redBttn"
+            app:layout_constraintBottom_toTopOf="@+id/blue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/yellow"
+            app:layout_constraintTop_toTopOf="parent"
+            app:strokeColor="#2F9733"
+            android:textColor="#000000" />
+
+    <Button
+            android:id="@+id/green"
+            android:layout_width="130dp"
+            android:layout_height="80dp"
+            android:backgroundTint="#19D808"
+            android:text="@string/greenBttn"
+            app:layout_constraintBottom_toTopOf="@+id/yellow"
+            app:layout_constraintEnd_toStartOf="@+id/red"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:strokeColor="#450C0C"
+            android:textColor="#000000" />
+
+    <Button
+            android:id="@+id/blue"
+            android:layout_width="130dp"
+            android:layout_height="80dp"
+            android:backgroundTint="@color/teal_200"
+            android:text="@string/blueBttn"
+            app:layout_constraintBottom_toTopOf="@+id/check"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/yellow"
+            app:layout_constraintTop_toBottomOf="@+id/red"
+            app:strokeColor="#2F9733"
+            android:textColor="#000000" />
+
+    <Button
+            android:id="@+id/yellow"
+            android:layout_width="130dp"
+            android:layout_height="80dp"
+            android:backgroundTint="#F4D124"
+            android:text="@string/yellowBttn"
+            app:layout_constraintBottom_toTopOf="@+id/start"
+            app:layout_constraintEnd_toStartOf="@+id/blue"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/green"
+            app:strokeColor="#2F9733"
+            android:textColor="#000000" />
+
+    <Button
+            android:id="@+id/start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/startBttn"
+            android:textColor="#070101"
+            app:icon="@drawable/baseline_play_arrow_black_18dp"
+            app:iconTint="#000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/check"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/yellow" />
+
+    <Button
+            android:id="@+id/check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/readyBttn"
+            android:textColor="#000000"
+            app:icon="@drawable/baseline_done_black_18dp"
+            app:iconTint="#000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/start"
+            app:layout_constraintTop_toBottomOf="@+id/blue" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

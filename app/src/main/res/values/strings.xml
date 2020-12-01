@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Simon Dice Game</string>
+    <string name='startBttn'>Start</string>
+    <string name='readyBttn'>Ready</string>
+    <string name="blueBttn">Blue</string>
+    <string name="yellowBttn">Yellow</string>
+    <string name="redBttn">Red</string>
+    <string name="greenBttn">Green</string>
+    <string name="endStatus">Game Ended</string>
+    <string name="startStatus">Game Started</string>
+</resources>
